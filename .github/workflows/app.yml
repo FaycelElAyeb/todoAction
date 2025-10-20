@@ -31,7 +31,7 @@ jobs:
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v4
         with:
-          name: poduction file
+          name: poductionfile
           path: ./todo/build
 
   # Deploy Job
@@ -44,7 +44,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: poduction file
+          name: poductionfile
           path: ./todo/build
 
       - name: Deploy to GitHub Pages
