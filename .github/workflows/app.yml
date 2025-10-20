@@ -51,5 +51,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.KEY }} #this is the key of the access token
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./todo/build
           
